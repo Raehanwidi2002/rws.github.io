@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(32, 35,48);
+}
+
+#logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  
+    
+}
+
+#logo path:nth-child(1){
+    
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 3s ease forwards 0.3s,fil 4s ease forwards 2.5s;
+    
+    
+}
+
+#logo path:nth-child(2){
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 3s ease forwards 0.2s,fil 4s ease forwards 2.5s;
+}
+
+#logo polygon:nth-child(1){
+    stroke-dasharray: 2000px;
+    stroke-dashoffset: 2000px;
+    animation: line-anim 3s ease forwards 0.3s,fil 4s ease forwards 2.5s;
+    
+}
+
+#logo polygon:nth-child(3){
+    stroke-dasharray: 900px;
+    stroke-dashoffset: 900px;
+    animation: line-anim 4s ease forwards 0.3s,fil 4s ease forwards 2.5s;
+}
+#logo polygon:nth-child(4){
+    
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 4s ease forwards 0.3s,fil 3s ease forwards 2.5s;
+}
+#logo polygon:nth-child(5){
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 4s ease forwards 0.3s,fil 2s ease forwards 2.5s;
+}
+
+
+@keyframes fil{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: white;
+    }
+}
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+        
+    }
+}
+
+
