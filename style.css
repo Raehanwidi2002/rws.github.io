@@ -4,10 +4,106 @@
     box-sizing: border-box;
 }
 
-body{
+.home .row{
+    position: relative;
+    top: -50%;
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    white-space: nowrap;
+    font-size: 64px;
+    transform: rotate(-30deg);
+    
+}
+
+.home .row div{
+    animation: ani 80s linear infinite;
+    animation-delay: -80s;
+}
+.home .row div:nth-child(2){
+    animation: ani1 80s linear infinite;
+    animation-delay: -41.5s;
+}
+
+@keyframes ani {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform:translateX(-100%) ;
+    }
+}
+@keyframes ani1 {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform:translateX(-200%) ;
+    }
+}
+
+.home .row:nth-child(even) div{
+    animation: ani2 80s linear infinite;
+    animation-delay: -80s;
+}
+.home .row:nth-child(even) div:nth-child(2){
+    animation: ani3 80s linear infinite;
+    animation-delay: -40s;
+}
+
+@keyframes ani2 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform:translateX(100%) ;
+    }
+}
+@keyframes ani3 {
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform:translateX(0) ;
+    }
+}
+i{
+    color: rgba(0,0, 0,0.5);
+    transition: 1s;
+    padding: 0 5px;
+    user-select: none;
+    cursor: default;
+}
+i:hover{
+    transition: 0s;
+    color: #0f0;
+    /* box-shadow: 0 0 120px #0f0; */
+    text-shadow:0 0 120px #0f0 ;
+}
+.home{
+    position: relative;
     width: 100%;
     height: 100vh;
-    background-color: rgb(32, 35,48);
+    background-color: #111;
+    overflow: hidden;
+    flex-direction: column;
+}
+.page-1{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+
+.page-2{
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+}
+
+.page-3{
+    width: 100%;
+    height: 100vh;
+    background-color: azure;
 }
 
 #logo{
@@ -37,25 +133,25 @@ body{
 #logo polygon:nth-child(1){
     stroke-dasharray: 2000px;
     stroke-dashoffset: 2000px;
-    animation: line-anim 3s ease forwards 0.3s,fil 4s ease forwards 2.5s;
+    animation: line-anim 3s ease forwards 0.3s,fil 4s ease forwards 3s;
     
 }
 
 #logo polygon:nth-child(3){
     stroke-dasharray: 900px;
     stroke-dashoffset: 900px;
-    animation: line-anim 4s ease forwards 0.3s,fil 4s ease forwards 2.5s;
+    animation: line-anim 4s ease forwards 0.3s,fal 3s ease forwards 2.5s;
 }
 #logo polygon:nth-child(4){
     
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
-    animation: line-anim 4s ease forwards 0.3s,fil 3s ease forwards 2.5s;
+    animation: line-anim 4s ease forwards 0.3s,fal 2s ease forwards 2.5s;
 }
 #logo polygon:nth-child(5){
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
-    animation: line-anim 4s ease forwards 0.3s,fil 2s ease forwards 2.5s;
+    animation: line-anim 4s ease forwards 0.3s,fal 1s ease forwards 2.5s;
 }
 
 
@@ -63,6 +159,12 @@ body{
     from{
         fill: transparent;
     }
+    to{
+        fill: white;
+    }
+}
+@keyframes fal{
+   
     to{
         fill: white;
     }

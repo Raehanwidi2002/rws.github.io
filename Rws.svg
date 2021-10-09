@@ -1,7 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" 
+<svg 
+ height="128px"
+ width="128px"
+ xmlns="http://www.w3.org/2000/svg" 
  viewBox="0 0 375.24 169.96">
     <defs>
-        <style>.cls-1,.cls-2,.cls-3{fill:none;stroke:#fff;stroke-miterlimit:10;}.cls-1{stroke-width:3px;}.cls-2{stroke-width:2px;}</style></defs>
+        <style>.cls-1,.cls-2,.cls-3{fill:#fff;stroke:#fff;stroke-miterlimit:10;}.cls-1{stroke-width:3px;}.cls-2{stroke-width:2px;}</style></defs>
         <title>Rws</title>
         <g id="Layer_2" data-name="Layer 2"><path class="cls-1" d="M222.19,473.23H118.83v-10H238Z" transform="translate(-117.33 -364.24)"/>
         <path class="cls-1" d="M387.7,473.23H491.07v-10H371.87Z" transform="translate(-117.33 -364.24)"/>
