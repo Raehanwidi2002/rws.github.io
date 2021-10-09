@@ -11,7 +11,7 @@
     display: flex;
     padding: 10px 0;
     white-space: nowrap;
-    font-size: 64px;
+    font-size: 300%;
     transform: rotate(-30deg);
     
 }
