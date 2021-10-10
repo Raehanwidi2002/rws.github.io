@@ -22,7 +22,7 @@
 }
 .home .row div:nth-child(2){
     animation: ani1 80s linear infinite;
-    animation-delay: -41.5s;
+    animation-delay: -41s;
 }
 
 @keyframes ani {
@@ -38,7 +38,7 @@
         transform: translateX(0);
     }
     100%{
-        transform:translateX(-200%) ;
+        transform:translateX(-210%) ;
     }
 }
 
@@ -48,20 +48,20 @@
 }
 .home .row:nth-child(even) div:nth-child(2){
     animation: ani3 80s linear infinite;
-    animation-delay: -40s;
+    animation-delay: -41s;
 }
 
 @keyframes ani2 {
     0%{
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
     100%{
-        transform:translateX(100%) ;
+        transform:translateX(50%) ;
     }
 }
 @keyframes ani3 {
     0%{
-        transform: translateX(-200%);
+        transform: translateX(-100%);
     }
     100%{
         transform:translateX(0) ;
